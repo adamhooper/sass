@@ -34,7 +34,7 @@ files.forEach((file, i) => {
   // Rate-limit http requests sent by `markdownLinkCheck` to avoid timeouts.
   setTimeout(
     () => markdownLinkCheck(markdown, checkOptions, handleCheckResult),
-    i * 500
+    i * 1000
   );
 
   function handleCheckResult(err, results) {
